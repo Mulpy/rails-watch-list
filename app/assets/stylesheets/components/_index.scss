@@ -14,4 +14,9 @@
 a {
   text-decoration: none !important;
   color: white;
+  transition: 0.4s;
+
+  &:hover {
+    color: gray;
+  }
 }
