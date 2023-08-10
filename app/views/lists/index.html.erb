@@ -1,15 +1,19 @@
 <div class="container">
-  <h1>My Lists</h1>
-  <div class="cards">
-    <% @lists.each do |list| %>
-      <%= link_to list_path(list) do%>
-        <div class="card-product">
-          <div class="card-product-infos">
-            <h2><%= list.name.capitalize %></h2>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/watch-list/homepage.png);">
+    <div class="container">
+      <h1>Save any kind of movies</h1>
+      <%= link_to "Add List", new_list_path, class: "btn btn-primary" %>
+    </div>
   </div>
-  <%= link_to "Add List", new_list_path, class: "btn btn-primary" %>
+  <div class="container">
+    <div class="cards">
+      <% @lists.each do |list| %>
+        <%= link_to list_path(list) do%>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            <%= list.name.capitalize %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>
