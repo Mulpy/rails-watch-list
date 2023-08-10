@@ -10,9 +10,11 @@
 @import "card_details";
 @import "list";
 @import "list_card";
+@import "card_link";
 
 a {
   text-decoration: none !important;
+  vertical-align: center;
   color: white;
   transition: 0.4s;
 
