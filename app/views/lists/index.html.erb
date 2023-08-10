@@ -11,6 +11,7 @@
         <%= link_to list_path(list) do%>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
             <%= list.name.capitalize %>
+            <%= link_to "Delete", list_path(list), class: "btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
           </div>
         <% end %>
       <% end %>
