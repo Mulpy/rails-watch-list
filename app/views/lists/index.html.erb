@@ -1,17 +1,18 @@
 <div class="container">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/watch-list/homepage.png);">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://econlife.com/wp-content/uploads/2014/07/Suply-and-demand-movie-theater-seats.jpg..jpg);">
     <div class="container">
       <h1>Save any kind of movies</h1>
-      <%= link_to "Add List", new_list_path, class: "btn btn-primary" %>
     </div>
   </div>
   <div class="container">
     <div class="cards">
       <% @lists.each do |list| %>
         <%= link_to list_path(list) do%>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-            <%= list.name.capitalize %>
-            <%= link_to "Delete", list_path(list), class: "btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+          <div class="card-details" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.wallpaperflare.com/static/779/691/639/technology-movies-projector-8mm-film-reel-wallpaper.jpg)">
+            <%= list.name.split.map(&:capitalize).join(' ') %>
+            <%= link_to list_path(list), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
+              <i class="fa-solid fa-trash-can"></i>
+            <% end %>
           </div>
         <% end %>
       <% end %>

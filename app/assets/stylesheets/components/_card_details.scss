@@ -1,8 +1,12 @@
-.card-category {
+.card-details {
   background-size: cover;
   background-position: center;
-  height: 180px;
-  display: flex;
+  height: 200px;
+  width: 380px;
+  margin: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   justify-content: center;
   align-items: center;
   color: white;
@@ -12,4 +16,15 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   text-decoration: none !important;
+  position: relative;
+
+  i {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
 }
