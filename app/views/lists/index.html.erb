@@ -9,7 +9,7 @@
       <% @lists.each do |list| %>
         <%= link_to list_path(list), class: "card-link" do%>
           <div class="card-details" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.wallpaperflare.com/static/779/691/639/technology-movies-projector-8mm-film-reel-wallpaper.jpg)">
-            <%= list.name.split.map(&:capitalize).join(' ') %>
+            <h2><%= list.name.split.map(&:capitalize).join(' ') %></h2>
             <%= link_to list_path(list), data: { turbo_method: :delete, turbo_confirm: "Delete #{list.name.split.map(&:capitalize).join(' ')}?" } do %>
               <i class="fa-solid fa-trash-can"></i>
             <% end %>
