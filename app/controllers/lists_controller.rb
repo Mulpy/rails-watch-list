@@ -14,7 +14,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-      redirect_to list_path(@list)
+      redirect_to root_path(@list)
     else
       render :new, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     @list.destroy
     if @list.destroy
-      redirect_to list_path(@list)
+      redirect_to root_path(@list)
     else
       render :new, status: :unprocessable_entity
     end
