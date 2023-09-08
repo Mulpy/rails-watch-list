@@ -3,8 +3,10 @@ Project description goes here
 
 This app was created as part of a student exercise for the Le Wagon Tokyo Web Development Bootcamp. The project was an AirBnB clone to design a website that specialized in clothes rentals.  Apparel owners can view and approve/reject rental requests.  Rentees can mark whether the rented item was successfully delivered. 
 
-![movie-lister home page](https://github.com/Mulpy/rails-watch-list/assets/134996929/2031842c-c0e5-4f54-a871-14cc058d9819)
-![movie list with titles added](https://github.com/Mulpy/rails-watch-list/assets/134996929/85c88675-b845-4c9b-a716-3df0f7efb5a8)
+![movie-lister home page](https://github.com/Mulpy/rails-watch-list/assets/134996929/06a91b49-d4c8-42cd-8a83-6843e27122c2)
+
+![movie-lister bookmarks page with movies added](https://github.com/Mulpy/rails-watch-list/assets/134996929/950ace2f-54af-4f54-a1ff-f43825d77c11)
+
 
 
 
